@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download Sealbound - An epic metroidvania pixel-art platformer game.">
+    <title data-i18n="pageTitle">Sealbound - Epic Adventure Game</title>
+    <link rel="icon" type="image/png" href="img/lifes_icon.png">
+    
+    <!-- Fonts: Outfit (EN Body), Cairo (AR Body), Press Start 2P (Headings) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Outfit:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Elements -->
+    <div class="bg-elements"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="img/lifes_icon.png" alt="Sealbound Logo" class="logo-img">
+            <span>SEALBOUND</span>
+        </div>
+        
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#hero" data-i18n="navHome">HOME</a></li>
+            <li><a href="#features" data-i18n="navFeatures">FEATURES</a></li>
+            <li><a href="#story" data-i18n="navStory">STORY</a></li>
+            <li><a href="#gallery" data-i18n="navGallery">GALLERY</a></li>
+            <li class="nav-controls-mobile">
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+                <button id="langToggle" class="icon-btn font-btn">ع</button>
+            </li>
+            <li><a href="#download" class="nav-btn" data-i18n="navDownload">DOWNLOAD</a></li>
+        </ul>
+        
+        <div class="nav-controls desktop-only">
+            <button id="themeToggleDesktop" class="icon-btn" aria-label="Toggle Theme"><i class="fa-solid fa-moon"></i></button>
+            <button id="langToggleDesktop" class="icon-btn font-btn">ع</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <h1 class="glitch" data-text="SEALBOUND">SEALBOUND</h1>
+            </div>
+            <p data-i18n="heroSubtitle">BREAK THE SEALS. CONQUER THE WORLDS.</p>
+            <div class="hero-buttons">
+                <a href="#download" class="btn primary-btn">
+                    <span data-i18n="heroPlayNow">PLAY NOW</span>
+                </a>
+                <a href="#features" class="btn secondary-btn" data-i18n="heroDiscover">DISCOVER MORE</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <div class="pixel-hero-container">
+                <div class="pixel-hero-sprite"></div>
+                <div class="pixel-shadow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="section-title">
+            <h2 data-i18n="featuresTitle">GAME FEATURES</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="features-grid">
+
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                <h3 data-i18n="feat2Title">PUZZLES</h3>
+                <p data-i18n="feat2Desc">Solve challenging puzzles using environment mechanics to unlock new areas.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3 data-i18n="feat3Title">NAVIGATING WORLDS</h3>
+                <p data-i18n="feat3Desc">Navigate seamlessly between interconnected magical worlds.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3 data-i18n="feat4Title">METROIDVANIA</h3>
+                <p data-i18n="feat4Desc">Gain new abilities and power-ups to reach previously inaccessible zones and secrets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story">
+        <div class="section-title">
+            <h2 data-i18n="storyTitle">THE STORY</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="story-container reveal">
+            <div class="coming-soon-box">
+                <i class="fa-solid fa-hourglass-half"></i>
+                <h3 data-i18n="storyComingSoon">COMING SOON...</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="section-title">
+            <h2 data-i18n="galleryTitle">GALLERY</h2>
+            <div class="title-underline"></div>
+        </div>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item reveal">
+                <img src="img/screenshot1.png" alt="Sealbound Gameplay 1" class="gallery-img">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="img/screenshot2.png" alt="Sealbound Gameplay 2" class="gallery-img">
+            </div>
+            <div class="gallery-item reveal">
+                <img src="img/screenshot3.png" alt="Sealbound Main Menu" class="gallery-img">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download">
+        <div class="download-container reveal">
+            <h2 data-i18n="dlTitle">READY TO PLAY?</h2>
+            <p data-i18n="dlSubtitle">DOWNLOAD SEALBOUND FOR FREE AND START YOUR EPIC JOURNEY.</p>
+            
+            <div class="download-buttons">
+                <!-- Windows Download -->
+                <a href="downloads/sealbound_windows.zip" class="dl-btn windows-btn" download>
+                    <div class="dl-icon"><i class="fa-brands fa-windows"></i></div>
+                    <div class="dl-text">
+                        <span class="dl-os" data-i18n="dlWindows">WINDOWS (PC)</span>
+                        <span class="dl-size" data-i18n="dlWinSize">V1.0 | 150 MB</span>
+                    </div>
+                </a>
+
+                <!-- Android Download -->
+                <a href="downloads/sealbound_android.apk" class="dl-btn android-btn" download>
+                    <div class="dl-icon"><i class="fa-brands fa-android"></i></div>
+                    <div class="dl-text">
+                        <span class="dl-os" data-i18n="dlAndroid">ANDROID (APK)</span>
+                        <span class="dl-size" data-i18n="dlAndSize">V1.0 | 85 MB</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo justify-center margin-bottom">
+                <img src="img/lifes_icon.png" alt="Sealbound Logo" class="logo-img">
+                <span>SEALBOUND</span>
+            </div>
+            <p data-i18n="footerText">CREATED BY YOU | POWERED BY GODOT ENGINE</p>
+            <div class="social-links">
+                <a href="#" data-i18n="socialDiscord">[ DISCORD ]</a>
+                <a href="#" data-i18n="socialTwitter">[ TWITTER ]</a>
+                <a href="#" data-i18n="socialYoutube">[ YOUTUBE ]</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-i18n="copyright">&copy; 2026 SEALBOUND. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
