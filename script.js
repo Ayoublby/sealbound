@@ -7,7 +7,7 @@ const translations = {
         navStory: "STORY",
         navGallery: "GALLERY",
         navDownload: "DOWNLOAD",
-        heroSubtitle: "BREAK THE SEALS. CONQUER THE WORLDS.",
+        heroSubtitle: "BREAK THE SEALS. DISCOVER THE WORLDS.",
         heroPlayNow: "PLAY NOW",
         heroDiscover: "DISCOVER MORE",
         featuresTitle: "GAME FEATURES",
@@ -16,7 +16,7 @@ const translations = {
         feat2Title: "PUZZLES",
         feat2Desc: "Solve challenging puzzles using environment mechanics to unlock new areas.",
         feat3Title: "NAVIGATING STAGES",
-        feat3Desc: "Seamlessly transition between uniquely designed stages, facing new challenges and discovering hidden secrets.",
+        feat3Desc: "Navigate between stages, face new challenges, and discover hidden secrets in every level.",
         feat4Title: "METROIDVANIA",
         feat4Desc: "Gain new abilities and power-ups to reach previously inaccessible zones and secrets.",
         storyTitle: "THE STORY",
@@ -31,7 +31,7 @@ const translations = {
         dlWindows: "WINDOWS (PC)",
         dlWinSize: "COMING SOON",
         dlAndroid: "ANDROID (APK)",
-        dlAndSize: "V1.0 | 85 MB",
+        dlAndSize: "V1.0 | 61 MB",
         footerText: "CREATED BY YOU | POWERED BY GODOT ENGINE",
         socialDiscord: "[ DISCORD ]",
         socialTwitter: "[ TWITTER ]",
@@ -45,7 +45,7 @@ const translations = {
         navStory: "القصة",
         navGallery: "الصور",
         navDownload: "التحميل",
-        heroSubtitle: "اكسر الأختام. واغزُ العوالم.",
+        heroSubtitle: "اكسر الأختام. واكتشف العوالم.",
         heroPlayNow: "العب الآن",
         heroDiscover: "اكتشف المزيد",
         featuresTitle: "مميزات اللعبة",
@@ -54,7 +54,7 @@ const translations = {
         feat2Title: "ألغاز معقدة",
         feat2Desc: "حل ألغازاً ممتعة باستخدام بيئة اللعبة لفتح مسارات جديدة.",
         feat3Title: "التنقل بين المراحل",
-        feat3Desc: "انتقل بسلاسة بين المراحل المصممة بعناية، وواجه تحديات جديدة واكتشف أسراراً مخفية في كل مرحلة.",
+        feat3Desc: "انتقل بين المراحل وواجه تحديات جديدة واكتشف أسراراً مخفية في كل مرحلة.",
         feat4Title: "ميترويدفينيا",
         feat4Desc: "اكتسب قدرات جديدة للوصول إلى مناطق سرية لم تكن قادراً على بلوغها.",
         storyTitle: "القصة",
@@ -69,7 +69,7 @@ const translations = {
         dlWindows: "ويندوز (PC)",
         dlWinSize: "قريباً",
         dlAndroid: "أندرويد (APK)",
-        dlAndSize: "الإصدار الأول | 85 ميجا",
+        dlAndSize: "الإصدار الأول | 61 ميجا",
         footerText: "برمجة وتصميم: أنت | بمحرك Godot",
         socialDiscord: "[ ديسكورد ]",
         socialTwitter: "[ تويتر ]",
@@ -80,7 +80,7 @@ const translations = {
 
 // Language Toggle
 const langBtns = [document.getElementById('langToggle'), document.getElementById('langToggleDesktop')];
-let currentLang = localStorage.getItem('lang') || 'en';
+let currentLang = localStorage.getItem('lang') || 'ar';
 
 function setLanguage(lang) {
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';

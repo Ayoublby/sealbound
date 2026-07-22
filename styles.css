@@ -573,6 +573,27 @@ section:not(#hero) {
     box-shadow: 6px 6px 0px rgba(0,0,0,0.5);
 }
 
+.disabled-btn, [dir="rtl"] .disabled-btn {
+    background: #7a7a8c !important;
+    color: #d0d0d0 !important;
+    border-color: #555566 !important;
+    box-shadow: none !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+    opacity: 0.65;
+}
+
+.disabled-btn .dl-size, [dir="rtl"] .disabled-btn .dl-size {
+    color: #e0e0e0 !important;
+}
+
+.disabled-btn:hover, [dir="rtl"] .disabled-btn:hover {
+    transform: none !important;
+    background: #7a7a8c !important;
+    color: #d0d0d0 !important;
+    box-shadow: none !important;
+}
+
 .dl-btn:hover { transform: translate(-4px, -4px); }
 [dir="rtl"] .dl-btn:hover { transform: translate(4px, -4px); }
 
@@ -696,8 +717,11 @@ footer {
 
     .nav-controls-mobile {
         display: flex !important;
-        margin-top: 15px;
-        gap: 15px;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin: 15px auto !important;
+        gap: 15px !important;
     }
 
     .nav-links li { 
