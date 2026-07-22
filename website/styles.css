@@ -27,12 +27,18 @@
     --text-muted: #8c6a78;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
 body {
     font-family: 'Outfit', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     background-color: var(--bg-color);
     color: var(--text-main);
-    overflow-x: hidden;
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -40,7 +46,7 @@ body {
 [dir="rtl"] body {
     font-family: 'Cairo', sans-serif;
     font-weight: 700;
-    font-size: 1.3rem; /* Increased to match English visual size */
+    font-size: 1.05rem;
 }
 
 h1, h2, h3 {
@@ -625,18 +631,18 @@ footer {
 /* Responsive & Mobile Optimization */
 @media (max-width: 950px) {
     nav {
-        padding: 12px 20px;
+        padding: 12px 15px;
     }
     nav.scrolled {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
     .logo {
-        font-size: 1.3rem;
-        gap: 10px;
+        font-size: 1.2rem;
+        gap: 8px;
     }
     .logo-img {
-        width: 36px;
-        height: 36px;
+        width: 32px;
+        height: 32px;
     }
 
     .hamburger { 
@@ -708,13 +714,16 @@ footer {
     #hero {
         flex-direction: column;
         text-align: center;
-        padding: 110px 20px 50px 20px;
-        gap: 30px;
+        padding: 100px 15px 40px 15px;
+        gap: 25px;
         min-height: auto;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     .hero-content {
         max-width: 100%;
+        width: 100%;
     }
 
     .hero-logo {
@@ -723,92 +732,84 @@ footer {
     }
 
     .glitch { 
-        font-size: clamp(1.8rem, 7vw, 3rem) !important;
+        font-size: clamp(1.5rem, 6vw, 2.5rem) !important;
         word-break: break-word;
     }
 
     .hero-content p {
-        font-size: clamp(1.1rem, 4vw, 1.6rem);
-        margin-bottom: 30px;
+        font-size: clamp(1rem, 3.8vw, 1.4rem);
+        margin-bottom: 25px;
     }
     [dir="rtl"] .hero-content p {
-        font-size: clamp(1.2rem, 4.5vw, 1.8rem);
+        font-size: clamp(1.1rem, 4vw, 1.5rem);
     }
 
     .hero-buttons { 
         justify-content: center;
-        gap: 14px;
+        gap: 12px;
     }
 
     section:not(#hero) {
-        padding: 60px 20px;
-        margin: 30px 0;
+        padding: 50px 15px;
+        margin: 20px 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .section-title {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 
     .section-title h2 {
-        font-size: clamp(1.6rem, 5vw, 2.2rem);
+        font-size: clamp(1.5rem, 4.5vw, 2rem);
     }
 
     .features-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
     }
 
-    .feature-card {
-        padding: 30px 20px;
-        box-shadow: 5px 5px 0px rgba(0,0,0,0.4);
-    }
-    [data-theme="light"] .feature-card {
-        box-shadow: 5px 5px 0px var(--secondary-color);
-    }
-    [dir="rtl"] .feature-card {
-        box-shadow: -5px 5px 0px rgba(0,0,0,0.4);
-    }
-    [dir="rtl"][data-theme="light"] .feature-card {
-        box-shadow: -5px 5px 0px var(--secondary-color);
+    .feature-card, [dir="rtl"] .feature-card {
+        padding: 25px 15px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
     .coming-soon-box {
-        padding: 40px 20px;
-        font-size: 1.4rem;
+        padding: 30px 15px;
+        font-size: 1.3rem;
     }
 
     .gallery-grid {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 16px;
     }
 
-    .gallery-item {
-        height: 210px;
-        box-shadow: 5px 5px 0px rgba(0,0,0,0.4);
-    }
-    [dir="rtl"] .gallery-item {
-        box-shadow: -5px 5px 0px rgba(0,0,0,0.4);
+    .gallery-item, [dir="rtl"] .gallery-item {
+        height: 200px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 
-    .download-container {
-        padding: 35px 20px;
-        box-shadow: 6px 6px 0px var(--secondary-color);
-    }
-    [dir="rtl"] .download-container {
-        box-shadow: -6px 6px 0px var(--secondary-color);
+    .download-container, [dir="rtl"] .download-container {
+        padding: 25px 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .download-buttons {
         flex-direction: column;
         align-items: stretch;
-        gap: 15px;
+        gap: 14px;
+        width: 100%;
     }
 
-    .dl-btn {
+    .dl-btn, [dir="rtl"] .dl-btn {
         min-width: 0;
         width: 100%;
         justify-content: center;
-        padding: 16px 20px;
+        padding: 14px 16px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        box-sizing: border-box;
     }
 }
 
@@ -817,38 +818,39 @@ footer {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        max-width: 320px;
+        max-width: 300px;
         margin: 0 auto;
     }
 
     .btn {
         width: 100%;
-        padding: 14px 20px;
-        font-size: 1rem;
+        padding: 12px 18px;
+        font-size: 0.95rem;
         text-align: center;
+        box-sizing: border-box;
     }
     [dir="rtl"] .btn {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
     }
 
     .pixel-hero-container {
-        transform: scale(0.85);
-        margin: -20px 0;
+        transform: scale(0.8);
+        margin: -25px 0;
     }
 
     .dl-btn {
-        padding: 14px 15px;
+        padding: 12px 14px;
     }
 
     .dl-icon {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .dl-os {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .dl-size {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
